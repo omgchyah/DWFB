@@ -6,9 +6,59 @@
     <title>My first webpage</title>
 </head>
 <body>
-    <form>
+    <br>
+    <table>
+        <tr>
+            <th>Price</th>
+            <th>Product</th>
+        </tr>
+        <tr>
+            <td>Hola beats</td>
+            <td>Free</td>
+        </tr>
+    </table>
+    <br>
+    <!-- ul es lista no ordenada -->
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+    </ul>
+    <br>
+    <!-- ul es lista no ordenada -->
+    <ol>
+        <li value="50">Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub-element 1</li>
+                <li style="list-style-type: lower-alpha;">sub-element 2</li>
+                <li style="list-style-type: lower-alpha;">sub-element 3</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+    <form action="/form" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name" />
+        <input value="name" type="text" id="name" name="name" placeholder="Write your name" />
+        <br>
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input value="Last name" type="text" id="lastname" name="lastname" placeholder="Write your last name" />
+        <br>
+        <br>
+        <label for="comments">Escribe tus comentarios:</label>
+        <br>
+        <textarea rows="10" cols="50" id="comments" name="comments" placeholder="Write any comment">Escribe tus comentarios</textarea>
+        <br>
+        <br>
+        <button type="button"><img src="img/drac.jpg" width="50" /></button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <!-- Hay 3 tipos de botones: button, reset submit -->
     </form>
     <h1>My first heading</h1>
     <h2>My second heading</h2>
@@ -19,14 +69,18 @@
     <p>Happy litte pig is very happy.</p>
     <p>Sad little pig is very sad.</p>
     <hr>
+    <!-- Separator -->
     <h2>Little Pig Philip</h2>
     <p>
         This text is <span style="color:blue">much longer</span>
-        to showcase <br> the span tag
+        to showcase <br><br> the span tag
     </p>
     <!-- This is a comment -->
-     <a target="_blank" href="https://www.google.com">Open Google</a>
-     <img src="img/drac.jpg" width="400" <!--height="200" />
+     <a target="_blank" href="https://www.google.com">Open Google</a> 
+     <!-- target="_blank" es para abrir una nueva pestaña -->
+     <img src="img/drac.jpg" width="400" height="200" />
+     <br>
+
 
 </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recogida de Datos al Azar</title>
+</head>
+<body>
+    <header>
+        <h1>¡'Pizzeria Pipa' quiere saber tu opinión!</h1>
+        <p>Ayúdanos a mejorar la calidad de nuestras pizzas</p>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h2>¿Por qué recopilamos datos al azar?</h2>
+            <p>En 'Pizzeria Pipa nos interesa conocer más a nuestros clientes para personalizar la experiencia.</p>
+            <hr>
+            <h3>Algunos detalles que queremos saber de ti:</h3>
+            <ul>
+                <li>Texturas favoritas al comer</li>
+                <li>Combinaciones de sabores inesperados</li>
+                <li>Algún recuerdo de la infancia</li>
+                <li>Estación favorita del año</li>
+            </ul>
+            <img src="img/logo.jpg" alt="Logo de pizza" width="200" />
+            <p><sub>Logo de Pizzeria Pipa</sub></p>
+        </section>
+        <hr>
+        <section>
+            <h2>Instrucciones para participar:</h2>
+            <ol>
+                <li>Lee cada casilla cuidadosamente.</li>
+                <li>Recuerda rellenar la información con datos veridicos.</li>
+                <li>Presiona 'Enviar' cuando hayas finalizado.</li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h2>Tu contribución aleatoria:</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre(s):</label>
+                <br>
+                <input id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                <br>
+                <br>
+                <label for="apellido">Apellido(s):</label>
+                <br>
+                <input id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+                <br>
+                <br>
+                <label for="edad">Edad:</label>
+                <br>
+                <input id="edad" name="edad" type="number" placeholder="edad" min="14" max="100" required>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input id="email" name="email" type="email" placeholder="correo@dominio.com" required>
+                <br>
+                <br>
+                <label for="textura">Del 1 al 10, ¿prefieres las texturas más crujientes?</label>
+                <br>
+                <input id="textura" name="textura" type="range" value="8" min="1" max="10" required>
+                <br>
+                <br>
+                <label for="sabores">¿Cuál es tu combinación de ingredientes o sabores más extraña que te guste?</label>
+                <br>
+                <textarea id="sabores" name="sabores" rows="10" cols="50" placeholder="Cuéntanos más sobre tus preferencias" required></textarea>
+                <br>
+                <br>
+                <label for="estacion">¿Cuál es tu estación favorita del año?:</label>
+                <br>
+                <input id="estacion" name="estacion" type="text" placeholder="Ej: Verano" required>
+                <br>
+                <br>
+                <input type="submit" value="Enviar datos">
+            </form>
+        </section>
+        <br>
+    </main>
+    <hr>
+    <footer>
+        <p>Gracias por tu valiosa contribución.</p>
+        <p>&copy; 2025 Pizzeria Pipa</p>
+    </footer>
+</body>
+</html>
