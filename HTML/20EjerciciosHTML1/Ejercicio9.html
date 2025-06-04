@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <!-- Se hace responsive para diferentes equipos conn name="viewport" content="width=device-width, initial-scale=1.0" -->
+  <title>Formulario</title>
+  <!-- Se agrega Title a la página web para que aparezca en la pestaña -->
 </head>
+<!-- Grupo B -->
+
 <body>
   <form action="" method="post">
-    <input type="text" name="nombre" placeholder="Nombre"><br><br>
-    <input type="email" name="correo" placeholder="Correo electrónico"><br><br>
-    <input type="password" name="contraseña" placeholder="Contraseña"><br><br>
+    <!-- No agregamos una acción porque no tenemos una URI a la que redireccionarlo -->
+    <!-- El método es un post para evitar enviar demasiado caracteres (límite de 256) -->
+    <label for="Nombre:"></label>
+    <!-- Agregamos una etiqueta de label antes de cada input para que el usuario sepa que información debe dar -->
+    <input type="text" name="nombre" placeholder="Nombre" required><br><br>
+    <!-- El tipo es texto para solo aceptar caracteres de texto, el placeholder para que enfatizar en la info -->
+    <!-- Agregamos un required para que el formulario no se envíe vacío -->
+    <label for="Email:"></label>
+    <input type="email" name="correo" placeholder="Correo electrónico" required><br><br>
+    <!-- Tipo de dato es email -->
+    <label for="Password:"></label>
+    <input type="password" name="contraseña" placeholder="Contraseña" required><br><br>
+    <!-- Tipo de datos es password para que no mostrar la contraseña -->
     <input type="submit" value="Registrarse">
+    <!-- Input so-ólo permite poner texto. Si se quiere un button con imágenes, se puede usar button -->
+    <!-- <button type="submit"><img src=" />Registrarse</button> -->
   </form>
 </body>
+
 </html>
