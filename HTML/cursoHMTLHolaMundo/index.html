@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first webpage</title>
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+    </style>
 </head>
 <body>
     <br>
-    <table>
-        <tr>
-            <th>Price</th>
-            <th>Product</th>
-        </tr>
-        <tr>
-            <td>Hola beats</td>
-            <td>Free</td>
-        </tr>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Price</th>
+                <th>Product</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Free</td>
+            </tr>
+                    <tr>
+                <td>Happy little pig</td>
+                <td>19,90€</td>
+            </tr>
+            <tr>
+                <td>Very happy little pig</td>
+                <td>9,80€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>49,80€
+            </td>
+        </tfoot>
     </table>
     <br>
     <!-- ul es lista no ordenada -->
@@ -34,7 +56,8 @@
         <li>Element 4</li>
         <li>
             <ol>
-                <li style="list-style-type: lower-roman;">sub-element 1</li>
+                <li style="list-style-type: georgian;">sub-element 1</li>
+                <!-- Ctrl +  espacio para ver opciones-->
                 <li style="list-style-type: lower-alpha;">sub-element 2</li>
                 <li style="list-style-type: lower-alpha;">sub-element 3</li>
             </ol>
