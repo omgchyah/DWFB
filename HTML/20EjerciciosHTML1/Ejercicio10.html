@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<!-- Se declara lenguaje correcto para motores de búsqueda -->
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Se hace responsive para diferentes equipos conn name="viewport" content="width=device-width, initial-scale=1.0" -->
+  <title>Búsqueda</title>
+  <!-- Se agrega Title a la página web para que aparezca en la pestaña -->
 </head>
+<!-- El head no aparece en pantalla -->
+<!-- Grupo B -->
+
 <body>
   <form action="" method="get">
-    <input type="text" name="buscar" placeholder="Buscar">
+    <!-- No agregamos una acción porque no tenemos una URI a la que redireccionarlo -->
+    <!-- El método es un porque enviaremos info y debe aparecer en pantalla lo que escriba -->
+    <input type="text" name="buscar" placeholder="Buscar" required>
+    <!-- Se escribe required pra no hacer una búsqueda vacía -->
     <input type="submit" value="Buscar">
   </form>
 </body>
+
 </html>

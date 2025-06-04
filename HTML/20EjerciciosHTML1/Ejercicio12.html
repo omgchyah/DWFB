@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<!-- Se declara lenguaje para motores de búsqueda -->
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Se hace responsive para diferentes equipos conn name="viewport" content="width=device-width, initial-scale=1.0" -->
+  <title>Galería</title>
+  <!-- Se agrega Title a la página web para que aparezca en la pestaña -->
 </head>
+<!-- El head no aparece en pantalla -->
+<!-- Grupo B -->
+
 <body>
   <form action="" method="post">
-    <input type="number" name="numero1" placeholder="Número 1">
-    <input type="number" name="numero2" placeholder="Número 2">
+    <label for="numero1">Número 1</label>
+    <!-- Agregamos una etiqueta de label antes de cada input para que el usuario sepa que información debe dar porque al escribir ya no aparece -->
+    <input type="number" name="numero1" placeholder="Número 1" required>
+    <!-- El required impide que se haga una búsqueda vacía -->
+    <br>
+    <!-- Estilo: Agregamos espacio para que sea más como un formulario horizontal -->
+    <label for="numero2">Número 2</label>
+    <input type="number" name="numero2" placeholder="Número 2" required>
   </form>
 </body>
-<html>
+
+</html>
