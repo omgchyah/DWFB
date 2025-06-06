@@ -1,0 +1,15 @@
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    position: relative;
+    left: 200px;
+}
+
+.son {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+}
