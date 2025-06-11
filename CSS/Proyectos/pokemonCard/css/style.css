@@ -1,0 +1,73 @@
+:root {
+  --color1: rgb(246, 178, 132);
+  --color2: rgb(255, 217, 146);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color1);
+  background-image: url(../img/fondoTop.svg), url(../img/fondoBotton.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 328px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+.card-header {
+  width: 100%;
+  display: flex;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  border-bottom: 1px solid var(--color2);
+}
+.card-body-contentimg {
+  border: 5px solid rgb(255, 157, 0);
+  border-radius: 50%;
+  background-color: rgb(252, 205, 118);
+  box-shadow: 0px -10px 20px rgb(255, 157, 0);
+  margin-top: -58px;
+}
+.card-body-contentimg-img {
+  padding: 20px;
+}
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.card-body-title span {
+  color: var(--color2);
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-footer-power {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}/*# sourceMappingURL=style.css.map */
