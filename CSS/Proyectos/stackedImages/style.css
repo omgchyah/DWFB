@@ -4,26 +4,93 @@ body {
 }
 
 .images-container {
-    margin: 100px auto;
-    width: 500px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+/* Dentro de la etiqueta body, tenemos la etiqueta hijo images-container que es es de display flex, ocupa toda la altura de la pantalla */
 
 .images-container .image {
     position: relative;
     margin-right: -20px;
     display: inline-flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
+/* El contener imagen dentro de images-container se muestra en línea por el inline-flex y en dirección de columna, el margen en negativo hace que las imágenes estén superpuestas*/
 
 .images-container .image img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.32s ease-in-out;
+    box-shadow: 0 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .images-container .image .pokemon-name {
     background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    color: white;
+    /* display: none; */
+    min-width: 100px;
+    width: 150px;
+    top: -70px;
+    opacity: 0;
+    padding: 10px 15px;
+    /* transform: translateY(0); */
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
+/* La posición absolute es respecto a la caja padre, border-radius redondea los bordes del contenedor, el display none oculta los elementos dentro del contenedor
+*/
+
+.images-container .image .pokemon-name .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    width:  150px;
+    text-align: center;
+    box-sizing: border-box;  
+}
+/* El inline-block permite el orden en horizontal,  cuando el texto se superpone usa punto suspensivos, cuando se supone, el texto se oculta, no wrap significa que el texto se mantiene en una sola línea y no baja al siquiente  */
+
+.images-container .image:hover .pokemon-name {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-20px)
+}
+/* Al pasar el cursor sobre los contenedores de nombre: hace la función transform que va arriba */
+
+
+.images-container .image .pokemon-name::before {
+    content: "";
+    position: absolute;
+    width:  0px;
+    height: 1px;
+    left: 45%;
+    bottom: -20px;  
+    border-top: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+/* Añade la flecha debajo del nombre antes del elemento de nombre */
+
+.images-container .image:hover img {
+transform: translateY(-20px);
+}
+/* Le añado la animación a la propiedad transform */
+
+@media (max-width: 680px) {
+    .images-container{
+        flex-direction: column;
+        height: 180vh;
+    }
+    /*Lo hace responsive*/
+}
+
 
 
 
