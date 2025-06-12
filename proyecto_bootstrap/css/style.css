@@ -1,1 +1,12 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --color1: rgb(240, 240, 255);
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: var(--color1);
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
