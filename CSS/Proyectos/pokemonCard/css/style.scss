@@ -1,6 +1,6 @@
 :root {
     --color1: rgb(246, 178, 132);
-    --color2: rgb(255, 217, 146);
+    --color2: rgb(255, 168, 146);
 }
 
 html {
@@ -38,6 +38,7 @@ body {
     &-header {
         width: 100%;
         display: flex;
+        // height: 50px;
     }
     &-body {
         display: flex;
@@ -48,7 +49,7 @@ body {
         &-contentimg {
             border: 5px solid rgb(255, 157, 0);
             border-radius: 50%;
-            background-color: rgb(252, 205, 118);
+            background-color: rgb(169, 118, 252);
             box-shadow: 0px -10px 20px rgb(255, 157, 0);
             margin-top: calc(-50px - 8px);
             &-img {
