@@ -1,6 +1,9 @@
 :root {
-  --color1: #a6afed;
-  --color2: rgb(237, 238, 245);
+  --color1: #00f9cf;
+  --color2: #91d0dd;
+  --color3: #95b7f1;
+  --color4: #a3abf6;
+  --color5: #b8a4f5;
 }
 
 .navbar {
