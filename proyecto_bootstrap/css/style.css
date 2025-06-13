@@ -25,7 +25,8 @@ section {
   justify-content: center;
 }
 
-.btn-light, .btn-dark {
+.btn-light,
+.btn-dark {
   font-size: 1.1rem;
   margin: 20px;
   display: flex;
@@ -33,6 +34,12 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 15px 0px;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .hero {
@@ -210,6 +217,23 @@ section {
 }
 .articles-card-header {
   font-weight: bold;
+}
+
+.study {
+  padding: 40px;
+}
+.study .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.study .carousel .carousel-item {
+  height: 50vh;
+}
+.study .carousel .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  height: 100%;
 }
 
 @media (max-width: 767px) {

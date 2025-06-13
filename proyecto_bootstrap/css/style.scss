@@ -32,7 +32,8 @@ section {
     justify-content: center;
 }
 
-.btn-light, .btn-dark {
+.btn-light,
+.btn-dark {
     font-size: 1.1rem;
     margin: 20px;
     display: flex;
@@ -40,6 +41,12 @@ section {
     align-items: center;
     justify-content: center;
     gap: 5px;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 15px 0px;
+    font-family: 'Rubik Dirt', cursive;
 }
 
 // Seccion Hero
@@ -187,6 +194,7 @@ section {
 
         &-project {
             position: relative;
+
             &-image {
                 height: 100%;
                 width: 100%;
@@ -204,30 +212,34 @@ section {
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
-                    & p {
+
+                & p {
                     font-size: 25px;
                     font-weight: bold;
-                    margin-bottom: 0; 
+                    margin-bottom: 0;
                 }
-                    &-icons-container {
-                        display: flex;
-                        & i {
-                            color: var(--primary);
-                            font-size: 60px;
-                            margin: 10px;
-                        }
+
+                &-icons-container {
+                    display: flex;
+
+                    & i {
+                        color: var(--primary);
+                        font-size: 60px;
+                        margin: 10px;
                     }
+                }
             }
 
             &:hover {
                 .projects-container-project-overlay {
                     opacity: 1;
                 }
+
                 .projects-container-project-image {
                     opacity: 0.2;
                 }
             }
- 
+
         }
     }
 }
@@ -239,20 +251,48 @@ section {
         padding: 15px 0px;
         font-family: 'Rubik Dirt', cursive;
     }
+
     min-height: 500px;
     padding: 30px;
+
     &-card {
         width: 80%;
         max-width: 600px;
         margin: 20px;
+
         &-header {
             font-weight: bold;
 
         }
     }
-
-
 }
+
+//Estudios
+
+.study {
+    padding: 40px;
+
+    .carousel {
+        max-width: 800px;
+        margin: 0 auto;
+        
+
+        .carousel-item {
+            height: 50vh;
+
+            & img {
+                object-fit: cover;
+                border-radius: 10px;
+                height: 100%;
+            }
+
+        }
+
+    }
+}
+
+
+
 
 //Adaptable responsivo
 
@@ -273,6 +313,7 @@ section {
         font-size: 18px;
 
     }
+
     .projects-container-project-overlay-icons-container i {
         font-size: 40px;
 
