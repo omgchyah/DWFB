@@ -95,9 +95,32 @@ section {
     }
 }
 
+    .badges-container {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px 0;
+        &-badge {
+            margin: 5px;
+        }
+    }
+
+
 .experience {
-    padding: 20px;
+    padding: 40px 40px 60px 40px;
     background-color: var(--bg-light);
+    &-column {
+        padding: 20px;
+        border: 2px solid rgba(128, 128, 128, 0.607);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all 0.2s ease-in;
+    }
+    &-column:hover {
+        color: var(--text-light);
+        background-color: #1B1B1F;
+    }
     i {
         font-size: 2.5rem;
         color: var(--primary);
@@ -107,7 +130,7 @@ section {
     }
 
     &-title {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         margin: 10px 0;
     }
