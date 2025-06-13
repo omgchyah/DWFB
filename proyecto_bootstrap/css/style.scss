@@ -32,6 +32,16 @@ section {
     justify-content: center;
 }
 
+.btn-light {
+    font-size: 1.1rem;
+    margin: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 // Seccion Hero
 .hero {
     background-color: var(--bg-light);
@@ -154,6 +164,11 @@ section {
 
 .projects {
     padding: 40px;
+    background-color: var(--accent-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
     &-section-title {
         font-size: 2rem;
@@ -192,8 +207,16 @@ section {
                     & p {
                     font-size: 25px;
                     font-weight: bold;
-                    margin-bottom: 0;
+                    margin-bottom: 0; 
                 }
+                    &-icons-container {
+                        display: flex;
+                        & i {
+                            color: var(--primary);
+                            font-size: 60px;
+                            margin: 10px;
+                        }
+                    }
             }
 
             &:hover {
@@ -220,5 +243,16 @@ section {
 @media (max-width: 460px) {
     .hero-inferior-image {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .projects-container-project-overlay p {
+        font-size: 18px;
+
+    }
+    .projects-container-project-overlay-icons-container i {
+        font-size: 40px;
+
     }
 }
