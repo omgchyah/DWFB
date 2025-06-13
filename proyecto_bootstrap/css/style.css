@@ -224,7 +224,7 @@ h2 {
 }
 
 .study {
-  padding: 40px;
+  padding: 40px 40px 100px 40px;
   background-color: var(--primary);
 }
 .study h2 {
@@ -255,6 +255,61 @@ h2 {
 .study .carousel .carousel-inner .carousel-item .carousel-caption p {
   font-family: "Share Tech Mono", monospace;
   font-weight: bolder;
+}
+
+.contacto {
+  background-color: var(--secondary);
+}
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+}
+.contacto .container .rectangle {
+  margin-top: -20px;
+  background-color: var(--accent-1);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px var(--bg-light);
+}
+.contacto .container .rectangle .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacto .container .rectangle .row .title {
+  font-size: 2rem;
+  padding: 15px 0px;
+  font-family: "Rubik Dirt", cursive;
+  color: var(--bg-light);
+}
+.contacto .container .rectangle .row .description {
+  color: var(--bg-light);
+  font-size: 1.2rem;
+}
+.contacto .container .rectangle .row .contact-btn {
+  color: var(--bg-light);
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.contacto .container .rectangle .row .contact-btn i {
+  color: var(--bg-light);
+  font-size: 1.3rem;
+  margin-left: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto .container .rectangle .row .contact-btn:hover, .contacto .container .rectangle .row .contact-btn:focus, .contacto .container .rectangle .row .contact-btn:active {
+  background-color: var(--bg-light);
+  color: var(--primary);
+}
+.contacto .container .rectangle .row .contact-btn:hover i, .contacto .container .rectangle .row .contact-btn:focus i, .contacto .container .rectangle .row .contact-btn:active i {
+  color: var(--primary);
 }
 
 @media (max-width: 767px) {
