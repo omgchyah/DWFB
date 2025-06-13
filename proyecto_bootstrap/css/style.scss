@@ -272,27 +272,31 @@ h2 {
 .study {
     padding: 40px;
 
-    .carousel {
+    & .carousel {
         max-width: 800px;
         margin: 0 auto;
-        
 
-        .carousel-item {
-            height: 50vh;
+        & .carousel-inner {
+            & .carousel-item {
+                height: 50vh;
 
-            & img {
-                object-fit: cover;
-                border-radius: 10px;
-                height: 100%;
+                & img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                    height: 100%;
+                }
+                & .carousel-caption {
+                    font-weight: bold;
+                    & h4 {
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    }
+                
+                }
             }
-
         }
 
     }
 }
-
-
-
 
 //Adaptable responsivo
 
