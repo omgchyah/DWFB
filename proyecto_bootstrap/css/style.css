@@ -39,7 +39,9 @@ section {
 h2 {
   font-size: 2rem;
   padding: 15px 0px;
-  font-family: "Rubik Dirt", cursive;
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero {
@@ -244,10 +246,15 @@ h2 {
 .study .carousel .carousel-inner .carousel-item .carousel-caption {
   font-weight: bold;
   color: var(--text-light);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 .study .carousel .carousel-inner .carousel-item .carousel-caption h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.study .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: bolder;
 }
 
 @media (max-width: 767px) {
