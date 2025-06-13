@@ -12,7 +12,6 @@
   background-color: var(--secondary);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  height: 10vh;
 }
 .navbar-collapse {
   align-items: center;
@@ -29,12 +28,10 @@ section {
 .hero {
   background-color: var(--bg-light);
   text-align: center;
-  height: 85vh;
 }
 .hero-principal {
   padding: 3rem;
   background-color: var(--bg-light);
-  height: 50vh;
 }
 .hero-principal h1 {
   font-family: "Rubik Dirt";
@@ -54,11 +51,10 @@ section {
 }
 .hero-inferior {
   background-color: var(--bg-light);
-  height: 35vh;
 }
 .hero-inferior-image {
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 30vh;
+  box-sizing: border-box;
 }
 
 .section-dark {
@@ -83,13 +79,30 @@ section {
   font-size: 1.2rem;
 }
 
+.experience {
+  padding: 20px;
+  background-color: var(--bg-light);
+}
+.experience i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  background-color: var(--accent-1);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+.experience-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
 @media (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
 }
-@media screen and (min-width: 700px) {
+@media (max-width: 460px) {
   .hero-inferior-image {
-    max-width: 600px;
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
