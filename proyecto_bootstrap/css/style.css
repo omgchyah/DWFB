@@ -204,11 +204,13 @@ h2 {
 .articles {
   min-height: 500px;
   padding: 30px;
+  background-color: var(--bg-light);
 }
 .articles h2 {
   font-size: 2rem;
   padding: 15px 0px;
   font-family: "Rubik Dirt", cursive;
+  background-color: var(--bg-light);
 }
 .articles-card {
   width: 80%;
@@ -221,6 +223,10 @@ h2 {
 
 .study {
   padding: 40px;
+  background-color: var(--primary);
+}
+.study h2 {
+  color: var(--text-light);
 }
 .study .carousel {
   max-width: 800px;
@@ -237,6 +243,8 @@ h2 {
 }
 .study .carousel .carousel-inner .carousel-item .carousel-caption {
   font-weight: bold;
+  color: var(--text-light);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
 }
 .study .carousel .carousel-inner .carousel-item .carousel-caption h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;

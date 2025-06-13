@@ -246,15 +246,15 @@ h2 {
 
 // Articulos
 .articles {
+    min-height: 500px;
+    padding: 30px;
+    background-color: var(--bg-light);
     & h2 {
         font-size: 2rem;
         padding: 15px 0px;
         font-family: 'Rubik Dirt', cursive;
+        background-color: var(--bg-light);
     }
-
-    min-height: 500px;
-    padding: 30px;
-
     &-card {
         width: 80%;
         max-width: 600px;
@@ -271,6 +271,10 @@ h2 {
 
 .study {
     padding: 40px;
+    background-color: var(--primary);
+    & h2 {
+        color: var(--text-light);
+    }
 
     & .carousel {
         max-width: 800px;
@@ -285,12 +289,17 @@ h2 {
                     border-radius: 10px;
                     height: 100%;
                 }
+
                 & .carousel-caption {
                     font-weight: bold;
+                    color: var(--text-light);
+                    text-shadow:
+                        1px 1px 4px rgba(0, 0, 0, 0.75);
+
                     & h4 {
                         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                     }
-                
+
                 }
             }
         }
