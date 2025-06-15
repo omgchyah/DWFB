@@ -225,10 +225,11 @@ h2 {
 
 .study {
   padding: 40px 40px 100px 40px;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 .study h2 {
   color: var(--text-light);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
 .study .carousel {
   max-width: 800px;
@@ -258,7 +259,7 @@ h2 {
 }
 
 .contacto {
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 .contacto .container {
   max-width: 1100px;
@@ -280,6 +281,7 @@ h2 {
   padding: 15px 0px;
   font-family: "Rubik Dirt", cursive;
   color: var(--bg-light);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
 .contacto .container .rectangle .row .description {
   color: var(--bg-light);
@@ -309,6 +311,47 @@ h2 {
   color: var(--primary);
 }
 .contacto .container .rectangle .row .contact-btn:hover i, .contacto .container .rectangle .row .contact-btn:focus i, .contacto .container .rectangle .row .contact-btn:active i {
+  color: var(--primary);
+}
+
+footer {
+  min-height: 500px;
+}
+footer .logo {
+  color: var(--bg-light);
+  font-size: 60px;
+}
+footer .footer-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+footer .icons-social a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid var(--bg-light);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+footer .icons-social i {
+  color: var(--bg-light);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+footer .icons-social a:hover {
+  background-color: var(--bg-light);
+  border: 2px solid var(--accent-1);
+}
+footer .icons-social a:hover i {
   color: var(--primary);
 }
 
