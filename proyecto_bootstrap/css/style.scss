@@ -63,13 +63,15 @@ h2 {
 
         & h1 {
             font-family: 'Rubik Dirt';
-            font-size: 2.5rem
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.354);
         }
 
         & h2 {
             font-size: 1.5rem;
             color: var(--accent-1);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.326);
         }
 
     }
@@ -137,11 +139,12 @@ h2 {
 
 .experience {
     padding: 40px 40px 60px 40px;
-    background-color: var(--bg-light);
+    background-color: var(--secondary);
 
     &-column {
+        background-color: var(--bg-light);
         padding: 20px;
-        border: 2px solid rgba(128, 128, 128, 0.607);
+        border: 2px solid #a05e3b98;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -152,6 +155,10 @@ h2 {
     &-column:hover {
         color: var(--text-light);
         background-color: #1B1B1F;
+    }
+
+    &-column:hover i {
+        background-color: var(--bg-light);
     }
 
     i {
@@ -183,6 +190,7 @@ h2 {
         font-size: 2rem;
         padding: 15px 0px;
         font-family: 'Rubik Dirt', cursive;
+        text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.326);
     }
 
     &-section-description {
@@ -257,6 +265,7 @@ h2 {
         padding: 15px 0px;
         font-family: 'Rubik Dirt', cursive;
         background-color: var(--bg-light);
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.486);
     }
 
     &-card {
@@ -266,6 +275,10 @@ h2 {
 
         &-header {
             font-weight: bold;
+        }
+
+        & .list-group-item:hover {
+            background-color: rgba(128, 128, 128, 0.203);
 
         }
     }
@@ -409,6 +422,7 @@ footer {
         font-weight: 500;
         font-style: normal;
     }
+
     & .icons-social a {
         width: 50px;
         height: 50px;
@@ -427,13 +441,16 @@ footer {
         font-size: 1.5rem;
         transition: all 0.2s ease-in;
     }
+
     & .icons-social a:hover {
         background-color: var(--bg-light);
         border: 2px solid var(--accent-1);
     }
+
     & .icons-social a:hover i {
         color: var(--primary);
     }
+
     & .copyright {
         font-size: 15px;
         color: #aeaeaeae;
