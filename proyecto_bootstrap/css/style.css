@@ -354,6 +354,11 @@ footer .icons-social a:hover {
 footer .icons-social a:hover i {
   color: var(--primary);
 }
+footer .copyright {
+  font-size: 15px;
+  color: rgba(174, 174, 174, 0.6823529412);
+  padding: 20px;
+}
 
 @media (max-width: 767px) {
   .navbar-brand {

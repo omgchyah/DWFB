@@ -434,6 +434,11 @@ footer {
     & .icons-social a:hover i {
         color: var(--primary);
     }
+    & .copyright {
+        font-size: 15px;
+        color: #aeaeaeae;
+        padding: 20px;
+    }
 }
 
 
