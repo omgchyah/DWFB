@@ -258,36 +258,36 @@ h2 {
   font-weight: bolder;
 }
 
-.contacto {
+.contact {
   background-color: var(--primary);
 }
-.contacto .container {
+.contact .container {
   max-width: 1100px;
   min-height: 200px;
 }
-.contacto .container .rectangle {
+.contact .container .rectangle {
   margin-top: -20px;
   background-color: var(--accent-1);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px var(--bg-light);
 }
-.contacto .container .rectangle .row {
+.contact .container .rectangle .row {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.contacto .container .rectangle .row .title {
+.contact .container .rectangle .row .title {
   font-size: 2rem;
   padding: 15px 0px;
   font-family: "Rubik Dirt", cursive;
   color: var(--bg-light);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
-.contacto .container .rectangle .row .description {
+.contact .container .rectangle .row .description {
   color: var(--bg-light);
   font-size: 1.2rem;
 }
-.contacto .container .rectangle .row .contact-btn {
+.contact .container .rectangle .row .contact-btn {
   color: var(--bg-light);
   font-weight: bold;
   background-color: transparent;
@@ -300,17 +300,17 @@ h2 {
   font-size: 1rem;
   cursor: pointer;
 }
-.contacto .container .rectangle .row .contact-btn i {
+.contact .container .rectangle .row .contact-btn i {
   color: var(--bg-light);
   font-size: 1.3rem;
   margin-left: 8px;
   transition: all 0.2s ease-in-out;
 }
-.contacto .container .rectangle .row .contact-btn:hover, .contacto .container .rectangle .row .contact-btn:focus, .contacto .container .rectangle .row .contact-btn:active {
+.contact .container .rectangle .row .contact-btn:hover, .contact .container .rectangle .row .contact-btn:focus, .contact .container .rectangle .row .contact-btn:active {
   background-color: var(--bg-light);
   color: var(--primary);
 }
-.contacto .container .rectangle .row .contact-btn:hover i, .contacto .container .rectangle .row .contact-btn:focus i, .contacto .container .rectangle .row .contact-btn:active i {
+.contact .container .rectangle .row .contact-btn:hover i, .contact .container .rectangle .row .contact-btn:focus i, .contact .container .rectangle .row .contact-btn:active i {
   color: var(--primary);
 }
 
