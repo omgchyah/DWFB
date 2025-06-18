@@ -1,0 +1,129 @@
+/* Estilos generales del cuerpo de la página */
+body {
+  margin: 0; /* Elimina el margen por defecto del navegador */
+  font-family: Arial, sans-serif; /* Define la fuente principal del sitio */
+  background-color: #f4f4f4; /* Color de fondo claro para toda la página */
+  color: #333; /* Color del texto principal (gris oscuro) */
+  padding: 20px; /* Añade espacio interno en todo el cuerpo */
+}
+
+* {
+  list-style-type: none; /* Quita los puntos o números de las listas */
+  box-sizing: border-box; /* Incluye el padding y borde dentro del ancho/alto de los elementos */
+  margin: 0; /* Elimina los márgenes por defecto en todos los elementos */
+  padding: 0; /* Elimina el relleno por defecto en todos los elementos */
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #183b0a; /* Fondo verde oscuro para la cabecera */
+  padding: 10px 0; /* Espacio arriba y abajo del contenido */
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-bottom: 20px; /* Espacio debajo de la cabecera */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+header a h1 {
+  margin: 0; /* Elimina el margen del título */
+  color: rgb(255, 255, 255); /* Color blanco para el texto del encabezado */
+}
+
+h1:hover {
+  color: #b3ded4; /* Color del título al pasar el ratón */
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño del texto al hacer hover */
+  transition: all 0.3s ease-in-out; /* Hace la transición suave */
+}
+
+/* Estilos del contenido principal y la barra lateral */
+main {
+  display: flex; /* Activa el modelo de caja flexible */
+  gap: 20px; /* Espacio entre el artículo y el aside */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 0 10px; /* Espacio horizontal interno */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+  flex-direction: row; /* Mantiene article y aside en fila (uno al lado del otro) */
+}
+
+article {
+  flex: 2; /* El artículo ocupa el doble de espacio que el aside */
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px; /* Espacio interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+article:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+aside {
+  flex: 1; /* El aside ocupa menos espacio que el artículo */
+  background-color: #e0f0ff; /* Fondo celeste claro */
+  padding: 20px; /* Espacio interno */
+  border-radius: 8px; /* Bordes redondeados */
+  flex-shrink: 0; /* Impide que el aside se reduzca cuando el ancho es pequeño */
+  align-self: flex-start; /* Alinea el aside al inicio del contenedor verticalmente */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos de los enlaces */
+a {
+  color: #064e3b; /* Color verde oscuro para los enlaces */
+  text-decoration: none; /* Quita el subrayado por defecto */
+  transition: all 0.4s ease-in-out; /* Transición suave al hacer hover o focus */
+  text-shadow: 0 4px 4px rgba(16, 51, 3, 0.326); /* Sombra para dar efecto al texto */
+}
+
+a:focus {
+  outline: 3px dashed #b3ded4; /* Borde punteado visible al usar teclado */
+  background-color: #f6dab6; /* Fondo beige al enfocar el enlace */
+}
+
+aside a:hover {
+  text-decoration: none; /* No subrayar al hacer hover */
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.503); /* Sombra negra más fuerte */
+  font-size: large; /* Agranda el texto al pasar el ratón */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para el enlace */
+}
+
+ul li {
+  margin-bottom: 0.5rem; /* Espacio entre elementos de lista */
+}
+
+/* Estilos del pie de página */
+footer {
+  text-align: center; /* Centra el texto */
+  margin-top: 40px; /* Espacio encima del footer */
+  padding: 10px 0; /* Espacio interno vertical */
+  color: #777; /* Texto gris claro */
+  border-top: 1px solid #ccc; /* Línea superior gris */
+}
+
+/* Estilos para imágenes dentro del artículo */
+article img {
+  width: 100%; /* Que la imagen ocupe todo el ancho del contenedor */
+  object-fit: cover; /* Recorta la imagen para que siempre llene el contenedor */
+  height: 50vh; /* Altura fija relativa al alto de la ventana */
+}
+
+/* Contenedor de imágenes en fila */
+.img-container {
+  display: flex; /* Muestra imágenes una al lado de la otra */
+  gap: 2px; /* Espacio entre imágenes */
+}
+
+.img-container img {
+  width: 50%; /* Cada imagen ocupa la mitad del contenedor */
+}
+
+/* Estilos adaptables para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+  .img-container {
+    flex-direction: column; /* Cambia las imágenes a vertical */
+  }
+
+  .img-container img {
+    width: 100%; /* Cada imagen ocupa todo el ancho */
+  }
+}

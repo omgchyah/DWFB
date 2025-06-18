@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Semática HTML5 -->
 <html lang="es">
 
 <head>
@@ -14,6 +15,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
     <!-- Rossana Liendo -->
 
 </head>
@@ -34,10 +41,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Listado de recetas</a>
+                        <a class="nav-link" href="#utensils">Utensilios imprescindibles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#accordionExample">Listado de recetas</a>
                     </li>
                 </ul>
             </div>
@@ -48,41 +55,137 @@
         <h1>Aprende a cocinar</h1>
     </header>
 
-    <!-- Dropdown -->
-    <aside>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Listado de recetas
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#sopa_cebolla">Sopa de cebolla</a></li>
-                <li><a class="dropdown-item" href="#salmon">Salmón al horno en papillote</a></li>
-                <li><a class="dropdown-item" href="#costillas">Costillas de cerdo en freidora de air</a></li>
-            </ul>
+    <div class="col container my-4 chapeau">
+        <div class="row align-items-center row">
+            <!-- Dropdown -->
+            <aside class="col-12 col-md-4 mb-3 mb-md-0">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle text-start" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Listado de recetas
+                    </button>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#sopa_cebolla">Sopa de cebolla</a></li>
+                        <li><a class="dropdown-item" href="#salmon">Salmón al horno en papillote</a></li>
+                        <li><a class="dropdown-item" href="#costillas">Costillas de cerdo en freidora de aire</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="col-12 col-md-8">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam illo omnis
+                    ad delectus hic sunt nam quidem reprehenderit quia ducimus minus maiores placeat esse reiciendis,
+                    et,
+                    ipsum a, dolore officiis?
+                </p>
+            </div>
         </div>
-    </aside>
-    </main>
+    </div>
+
+
+
+    <!-- Articles -->
+    <section id="articles" class="articles py-5 bg-light">
+        <h2 id="utensils" class="title text-center mb-4">Los imprescindibles</h2>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Article 1 -->
+                <div class="col-6 col-md-6 col-lg-4">
+                    <article class="text-center p-2 shadow-sm bg-white h-100">
+                        <img class="img-fluid mb-2 img-utensil" src="img/cuchillo.jpg" alt="Cuchillo">
+                        <h3>Cuchillo</h3>
+                        <p>Muy afilado, esencial para cortar con precisión.</p>
+                        <div class="buy d-flex justify-content-center gap-2">
+                            <a href="#"><i class="bi bi-amazon"></i></a>
+                            <a href="#"><i class="bi bi-shop"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Article 2 -->
+                <div class="col-6 col-md-6 col-lg-4">
+                    <article class="text-center p-2 shadow-sm bg-white h-100">
+                        <img class="img-fluid mb-2 img-utensil" src="img/tabla.jpg" alt="Tabla de cortar">
+                        <h3>Tabla de cortar</h3>
+                        <p>Superficie resistente para cortar sin dañar la encimera.</p>
+                        <div class="buy d-flex justify-content-center gap-2">
+                            <a href="#"><i class="bi bi-amazon"></i></a>
+                            <a href="#"><i class="bi bi-shop"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Article 3 -->
+                <div class="col-6 col-md-6 col-lg-4">
+                    <article class="text-center p-2 shadow-sm bg-white h-100">
+                        <img class="img-fluid mb-2 img-utensil" src="img/espatulas.jpeg" alt="Espátula">
+                        <h3>Espátulas</h3>
+                        <p>Perfectas para mezclar y servir sin rayar los utensilios.</p>
+                        <div class="buy d-flex justify-content-center gap-2">
+                            <a href="#"><i class="bi bi-amazon"></i></a>
+                            <a href="#"><i class="bi bi-shop"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Article 4 -->
+                <div class="col-6 col-md-6 col-lg-4">
+                    <article class="text-center p-2 shadow-sm bg-white h-100">
+                        <img class="img-fluid mb-2 img-utensil" src="img/pelador.webp" alt="Pelador">
+                        <h3>Pelador</h3>
+                        <p>Ideal para pelar frutas y verduras con facilidad.</p>
+                        <div class="buy d-flex justify-content-center gap-2">
+                            <a href="#"><i class="bi bi-amazon"></i></a>
+                            <a href="#"><i class="bi bi-shop"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Article 5 -->
+                <div class="col-6 col-md-6 col-lg-4">
+                    <article class="text-center p-2 shadow-sm bg-white h-100">
+                        <img class="img-fluid mb-2 img-utensil" src="img/batidor.jpg" alt="Batidor">
+                        <h3>Batidor</h3>
+                        <p>Perfecto para mezclar masas y batir huevos.</p>
+                        <div class="buy d-flex justify-content-center gap-2">
+                            <a href="#"><i class="bi bi-amazon"></i></a>
+                            <a href="#"><i class="bi bi-shop"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Article 6 -->
+                <div class="col-6 col-md-6 col-lg-4">
+                    <article class="text-center p-2 shadow-sm bg-white h-100">
+                        <img class="img-fluid mb-2 img-utensil" src="img/colador.jpg" alt="Colador">
+                        <h3>Colador</h3>
+                        <p>Indispensable para escurrir pasta o filtrar caldos.</p>
+                        <div class="buy d-flex justify-content-center gap-2">
+                            <a href="#"><i class="bi bi-amazon"></i></a>
+                            <a href="#"><i class="bi bi-shop"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Accordion -->
+    <!-- No pude cambiar a Article porque ya no funcionaba el componente -->
 
     <div class="accordion" id="accordionExample">
+        <h2 class="accordion-title text-center p-2">Recetario</h2>
         <div class="accordion-item" id="sopa_cebolla">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
                     <span class="material-symbols-outlined">
                         soup_kitchen
                     </span> Sopa de cebolla
                 </button>
-            </h2>
+            </h3>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="ingredients d-flex flex-row align-items-start">
                         <img class="recipe-img" src="img/sopa.jpg" alt="Sopa de cebolla francesa" width="50px">
                         <ul class="list-unstyled flex-grow-1">
-                            <h3>Ingredientes:</h3>
+                            <h4>Ingredientes:</h4>
                             <li class="list-group-item">5 cebollas</li>
                             <li class="list-group-item">45 ml de aceite de oliva virgen extra</li>
                             <li class="list-group-item">30 g de mantequilla</li>
@@ -96,7 +199,7 @@
                         </ul>
                     </div>
                     <div class="instructions">
-                        <h3>Instrucciones:</h3>
+                        <h4>Instrucciones:</h4>
                         <p>Corta las puntas de las cebollas, pélalas y córtalas por la mitad (de punta a punta
                             cortada).
                             Corta las cebollas finamente perpendicularmente a la fibra (que te queden como medios
@@ -143,25 +246,27 @@
                             Gratina hasta que el queso esté dorado y burbujeante.
                             Sirve inmediatamente con un poco de pimienta negra recién molida encima. <strong>¡A
                                 disfrutar!</strong></p>
+                        <span></span><a href="https://paulasapron.com/sopa-de-cebolla/" target="_blank" rel="rel="
+                            noopener noreferrer">Receta original</a></span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="accordion-item" id="salmon">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <span class="material-symbols-outlined">
                         set_meal
                     </span> Salmón en papillote
                 </button>
-            </h2>
+            </h3>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="ingredients d-flex flex-row align-items-start">
                         <img class="recipe-img" src="img/salmon.webp" alt="Salmón al papillote">
                         <ul class="list-unstyled flex-grow-1">
-                            <h3>Ingredientes:</h3>
+                            <h4>Ingredientes:</h4>
                             <li class="list-group-item">150-200g de salmón</li>
                             <li class="list-group-item">Verduras al gusto</li>
                             <li class="list-group-item">Salsas o especias para dar sabor</li>
@@ -170,7 +275,7 @@
                         </ul>
                     </div>
                     <div class="instructions">
-                        <h3>Instrucciones:</h3>
+                        <h4>Instrucciones:</h4>
                         <p> Precalienta el horno a 200ºC.
                             Corta las verduras que vayas a usar (ej. espárragos y setas).
                             Dobla un papel de horno por la mitad.
@@ -183,24 +288,27 @@
                             Hornea a 200ºC con calor arriba y abajo durante 12-20 minutos (según el grosor del salmón y
                             verduras).
                             <strong>¡Disfruta tu salmón al papillote!</strong>
+                        </p>
+                        <span><a href="https://cocinaconcoqui.com/salmon-papillote/" target="_blank" rel="rel=" noopener
+                                noreferrer">Receta original</a></span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="accordion-item" id="costillas">
-            <h2 class="accordion-header">
+            <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <i class="bi bi-piggy-bank me-2"></i> Costillas horneadas
                 </button>
-            </h2>
+            </h3>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <div class="ingredients d-flex flex-row align-items-start">
                         <img class="recipe-img" src="img/costillas-de-cerdo-en-freidora-de-aire-recien-hechas.webp"
                             alt="Costillas horneadas">
                         <ul class="list-unstyled flex-grow-1">
-                            <h3>Ingredientes:</h3>
+                            <h4>Ingredientes:</h4>
                             <li class="list-group-item">1 cucharadita de comino molido</li>
                             <li class="list-group-item">1 cucharadita de orégano seco</li>
                             <li class="list-group-item">1 cucharadita de tomillo seco</li>
@@ -213,14 +321,15 @@
                         </ul>
                     </div>
                     <div class="instructions">
-                        <h3>Instrucciones:</h3>
+                        <h4>Instrucciones:</h4>
                         <p>
                             Mezclamos las especias. Añadimos la miel, el tomate concentrado, la salsa de soja y el
                             aceite de oliva. Cortamos la tira de costillas en trozos que quepan en la airfryer.
                             Marinamos las costillas con la mezcla anterior. Cocinamos las costillas en la freidora de
                             aire 15 minutos a 180 ºC. Les damos la vuelta y las cocinamos otros 5
-                            minutos. <strong>Servimos recién hechas.</strong>
-                        </p>
+                            minutos. <strong>Servimos recién hechas.</strong></p>
+                        <span><a href="https://www.bonviveur.es/recetas/costillas-de-cerdo-en-freidora-de-aire"
+                                target="_blank" rel="rel=" noopener noreferrer">Receta original</a></span>
                     </div>
                 </div>
             </div>
