@@ -1,0 +1,1 @@
+alert('Alerta desde archico externo');
