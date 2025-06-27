@@ -1,14 +1,13 @@
 const numberIndexes = 6;
 
-let allLoterryNumbers = [];
+let allLotteryNumbers = [];
 
 function generateLotteryNumbers() {
     let lotteryNumbers = [];
 
-    for (let i = 0; i < numberIndexes; i++) {
+    while (lotteryNumbers.length < numberIndexes) {
     let randomNumber = Math.floor(Math.random() * 49) + 1;
-
-    if (lotteryNumbers.indexOf([i]) === -1) {
+    if (!lotteryNumbers.includes(randomNumber)) {
             lotteryNumbers.push(randomNumber);
         }
     }
@@ -17,40 +16,51 @@ function generateLotteryNumbers() {
 }
 
 function saveLotteryNumbers(array = []) {
+    allLotteryNumbers.push(array);
+}
 
-    allLoterryNumbers.push(array);
+function showAllLotteryNumbers() {
 
-    return allLoterryNumbers;
-
+    if (allLotteryNumbers.length === 0) {
+        return "You have no saved Games.";
+    } else {
+        let result= "These are you saved games:\n";
+        allLotteryNumbers.forEach((game, index) => {
+            result += `Game ${index + 1}: ${game.join(", ")} \n`;
+        });
+        return result;
+    }
 }
 
 let userOption = "";
 
 while (userOption !== "4") {
-
-    let userOption = prompt(`Choose an option:
+    userOption = prompt(`Choose an option:
     1. Start a new game and save my lottery numbers.
     2. Show previous lottery numbers.
     3. Start a new game and delete previous lottery numbers.
-    4. Quit.`);
+    4. Quit.\n`);
 
     switch (userOption) {
         case "1":
-            let newLotteryNumbers = generateLotteryNumbers();
-            console.log("You new lottery numbers are: " + newLotteryNumbers);
-            saveLotteryNumbers(newLotteryNumbers);            
+            const newNumbers = generateLotteryNumbers();
+            console.log("Your new lottery numbers are:", newNumbers.join(", "));
+            saveLotteryNumbers(newNumbers);         
             break;
-        case 2:
-            let allLotteryNumbers = saveLotteryNumbers();
-            console.log("All your lottery numbers are: " + allLotteryNumbers) 
+        case "2":
+            console.log(showAllLotteryNumbers());
             break;
-        case 3:
-            
+        case "3":
+            allLotteryNumbers = [];
+            const freshNumbers = generateLotteryNumbers();
+            console.log("Your new lottery numbers are:", freshNumbers.join(", "));
+            saveLotteryNumbers(freshNumbers);                               
+            break;
+        case "4":
+            console.log("Goodbye!");
             break;
         default:
             console.log("Unvalid option.");
             break;
     }
-} 
-
-console.log("Goodbye!");
+}
