@@ -1,46 +1,46 @@
 function findPrimeNumbers() {
-    let num1 = 0;
-    let num2 = 0;
     let primeNumbers = [];
 
-    for (let i = num1; i <= num2; i++) {
-        let isPrime = true;
-        if (i > 2) {
-            isPrime === true;            
-            for(let n = 2; n < i - 1; n++) {
-                if(i % n === 0) {
-                    isPrime = false;
-                }
-            }
-        if (isPrime === true) {
-            primeNumbers.push(i);
-        }
-        }   
+    let num1 = parseInt(prompt("Escribe dos números enteros para saber cuántos números primos están contenidos. Ingrese primer número: "));
+    
+    while(isNaN(num1)) {
+        num1 = parseInt(prompt("Entrada no válida. Ingrese primer número: "));        
     }
 
-}
+    let num2 = parseInt(prompt("Ingrese segundo número: "));
 
-function findPrimeNumbers() {
-    let num1 = parseInt(prompt("Introduce el número inicial:"));
-    let num2 = parseInt(prompt("Introduce el número final:"));
-    let primeNumbers = [];
+    while(isNaN(num2)) {
+        num2 = parseInt(prompt("Entrada no válida. Ingrese segundo número: "));  
+    }
+
+    while (num2 <= num1) {
+        num2 = parseInt(prompt("Segundo número debe ser mayor al primero. Ingrese segundo número: "));
+    }
 
     for (let i = num1; i <= num2; i++) {
-        if (i < 2) continue;
+        if (i < 2) {
+            continue;
+        }
 
         let isPrime = true;
+        let n = 2;
 
-        for (let n = 2; n <= Math.sqrt(i); n++) {
+        while (n <= Math.sqrt(i) && isPrime) {
             if (i % n === 0) {
-                isPrime = false;
-                break;
+                isPrime = false;                
             }
+            n++;
         }
-
-        if (isPrime) {
-            primeNumbers.push(i);
-        }
+        if(isPrime) {
+            primeNumbers.push(i);  
+        }  
     }
 
-    console.log("Números primos entre", num1, "y", num2, ":", primeNumbers);
+    alert(`Números primos entre ${num1} y ${num2}: ${primeNumbers.join(", ")}`);
+    return primeNumbers;
+
 }
+
+console.log(findPrimeNumbers());
+
+
