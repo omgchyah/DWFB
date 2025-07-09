@@ -1,0 +1,302 @@
+    body {
+      font-family: 'Lunchtype21', sans-serif;
+      font-size: large;
+      margin: 0;
+    }
+
+    .impulso-navbar {
+      background: linear-gradient(to right, #00A6D1, #78E3FF);
+      position: relative;
+      padding: 40px 10px 40px 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .impulso-logo-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      ;
+      z-index: 10;
+    }
+
+    .impulso-logo {
+      height: 150px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    .img-pinya {
+      height: 70px;
+    }
+
+    .img-pinya-2 {
+      height: 70px;
+      transform: scaleX(-1);
+    }
+
+    .navbar-nav {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-style: normal;
+    }
+
+    .navbar-nav .nav-link:hover {
+      font-weight: bolder;
+      color: white;
+      transform: scale(1.15);
+      transition: transform 0.3s ease;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar-nav .nav-link.active {
+      font-weight: bolder;
+      color: white;
+      transform: scale(1.15);
+      transition: transform 0.3s ease;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Footer*/
+    .footer-section {
+      padding: 10px;
+      background: linear-gradient(to bottom, #98f7b2, #3ad084);
+      color: black;
+      font-size: 1rem;
+    }
+
+    .footer-logo {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .footer-address {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .footer-plant {
+      height: 60px;
+    }
+
+    .inst-logo {
+      height: 30px;
+    }
+
+    i {
+      color: #1A3E2B;
+      font-size: larger;
+    }
+
+    /*Contacto*/
+
+    .title-contact {
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      color: #1A3E2B;
+      padding-top: 100px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto 3rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-form .form-label {
+      font-weight: bold;
+      color: #1A3E2B;
+    }
+
+    .contact-form .form-control {
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form .btn-primary {
+      background-color: #1A3E2B;
+      border: none;
+      font-weight: bold;
+      padding: 0.5rem 1.5rem;
+    }
+
+    .contact-form .btn-primary {
+      background: linear-gradient(135deg, #2e6f4d, #52b4cf);
+      border: none;
+      font-weight: bold;
+      padding: 0.5rem 1.5rem;
+    }
+
+    .contact-form .btn-primary:hover {
+      background: linear-gradient(135deg, #52b4cf, #2e6f4d);
+    }
+
+    .contact-form .btn-primary:active {
+      background: linear-gradient(135deg, #52b4cf, #2e6f4d);
+      transform: scale(0.95);
+    }
+
+    /* Divider Logo */
+    .logo-divider {
+      display: block;
+      margin: 3rem auto;
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    /* Company Info */
+    .company-info {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .company-info h2 {
+      margin-top: 2rem;
+      color: #3a3e1a;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 992px) {
+      .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: left;
+      }
+
+      .formatos-sabores-salud {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+      }
+
+      .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+      }
+
+      .contacto-lick {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 100%;
+      }
+
+      .img-pinya {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 10vw;
+      }
+
+      .img-pinya-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 10vw;
+      }
+
+      /*footer section*/
+      .footer-section {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: #1A3E2B;
+        padding: 2rem 1rem;
+      }
+
+      .footer-section .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-section .col-lg-4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      /* Stack logo and address vertically */
+      .footer-section .col-lg-4>.d-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      .plants-social {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center !important;
+      }
+
+      /* inner row with icons and plants */
+      .plants-social>.d-flex {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 1.5rem !important;
+      }
+
+      /* Optional: shrink icons on mobile */
+      .plants-social i {
+        font-size: 1.4rem;
+      }
+
+      .footer-address {
+        text-align: center;
+      }
+
+      .footer-logo,
+      .footer-plant,
+      .inst-logo {
+        margin-bottom: 8px;
+        justify-content: center !important;
+      }
+
+      .row>div {
+        margin-bottom: 1.5rem;
+      }
+
+      /*Contato */
+
+      .contact-form {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .company-info h2 {
+        font-size: 1.2rem;
+      }
+
+    }

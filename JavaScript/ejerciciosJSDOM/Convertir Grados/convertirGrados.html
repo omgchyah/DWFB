@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Convertidor de temperatura</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <h1>Convertidor de temperatura</h1>
-  <input type="number" name="temperatura" id="temperatura" placeholder="Introduce la temperatura">
-  <h3>Selecciona tu unidad</h3>
-  <input type="radio" name="grados" id="centigrado">Centígrados
-  <input type="radio" name="grados" id="farenheit">Farenheit
-  <input type="button" value="convertir" id="convertir">
-  <p id="mensaje"></p>
+  <div class="main-container">
+    <h1>Convertidor de temperatura</h1>
+    <div class="user-input">
+      <div class="texto-unidades">
+        <input type="number" name="temperatura" id="temperatura" placeholder="Introduce la temperatura">
+        <div class="centigrados">
+          <input type="radio" name="grados" id="centigrado"><span id="unidadTextoC">Centígrados</span>
+        </div>
+        <div class="farenheit">
+          <input type="radio" name="grados" id="farenheit"><span id="unidadTextoF">Farenheit</span>
+        </div>
+      </div>
+      <div class="btn-convertir">
+        <input type="button" value="convertir" id="convertir">
+      </div>
+    </div>
+  </div>
+
+  </div>
   <script src="convertirGrados.js"></script>
 </body>
+
 </html>

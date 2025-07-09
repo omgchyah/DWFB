@@ -1,0 +1,72 @@
+body {
+  background: #b8b8b8;
+  background: linear-gradient(-200deg, rgba(184, 184, 184, 1) 0%, rgba(235, 235, 235, 1) 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body .main-container {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: center;
+  align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 2px 5px 5px grey;
+  padding: 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  gap: 10px;
+  height: 40vh;
+}
+
+body .main-container .user-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+body .main-container .user-input .texto-unidades {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+body .main-container .user-input .texto-unidades #temperatura {
+  flex: auto;
+  border: none;
+  text-align: right;
+  padding: 3px;
+}
+
+
+body .main-container .user-input .texto-unidades #temperatura:focus {
+  outline: 2px solid grey;
+}
+
+body .main-container .user-input .texto-unidades .centigrado {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+body .main-container .user-input .texto-unidades .farenheit {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+body .main-container .user-input .btn-convertir {
+  margin: 30px;
+}

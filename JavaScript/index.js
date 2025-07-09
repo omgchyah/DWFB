@@ -8,8 +8,20 @@
 // }
 
 
-let num1 = 0;
-let str1 = "2";
+// let num1 = 0;
+// let str1 = "2";
 
 
-console.log(num1 + str1);
+// console.log(num1 + str1);
+
+// let saludo = function(nombre) {
+//   return "Hola " + nombre;
+// }
+
+// console.log(saludo())
+
+array1 = [1,2,3,1,2,3,undefined,4];
+
+//lo convertimos en conjunto y lo mostramos, ¿cuál será el resultado?
+
+array2 = set(array);

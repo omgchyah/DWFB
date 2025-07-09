@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.list-container {
+  background-color: rgb(240, 248, 255);
+  display: flex;
+  max-width: 50vw;
+  flex-direction: column;
+  margin: 50px auto 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.list-creador {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+}
+
+.list-creador .tarea-nueva {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* flex: <flex-grow> <flex-shrink> <flex-basis>; */
+.list-creador .tarea-nueva .escribir-tarea {
+  flex: 1;
+  border: none;
+  padding: 10px 16px;
+}
+
+.list-creador .tarea-nueva .btn-agregar-tarea {
+  /* Dont grow or shrink, fit to content */
+  flex: 0 0 auto;
+  white-space: nowrap;
+  width: auto;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #03ec49, #c4e334);
+  white-space: nowrap;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn-agregar-tarea:hover {
+  background: linear-gradient(to bottom, #5CD65C, #20d300); /* lighter shine */
+  transform: scale(1.02);
+}
+
+.btn-agregar-tarea:active {
+  transform: scale(0.98);
+}
