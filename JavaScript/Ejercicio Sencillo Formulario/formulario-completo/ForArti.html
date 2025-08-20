@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Control de Artículo</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Datos del Artículo</h1>
+    <form id="articuloForm">
+      <div class="form-group">
+        <label for="nombre" class="form-group-1">Nombre del Artículo:</label>
+        <input type="text" id="nombre" name="nombre" required class="form-group-2"/>
+      </div>
+      <div class="form-group">
+        <label for="descripcion" class="form-group-1">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required class="form-group-2"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="precio" class="form-group-1">Precio:</label>
+        <input type="number" id="precio" name="precio" step="0.01" min="0" required class="form-group-2" />
+      </div>
+      <div class="form-group">
+        <label for="cantidad" class="form-group-1">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required class="form-group-2" />
+      </div>
+      <div class="form-group">
+        <label for="categoria" class="form-group-1">Categoría:</label>
+        <select id="categoria" name="categoria" required class="form-group-2">
+          <option value="">Selecciona una categoría</option>
+          <option value="electronica">Electrónica</option>
+          <option value="hogar">Hogar</option>
+          <option value="moda">Moda</option>
+          <option value="alimentos">Alimentos</option>
+          <option value="otros">Otros</option>
+        </select>
+      </div>
+      <button type="submit">Guardar Artículo</button>
+    </form>
+    <div id="mensaje" class="mensaje"></div>
+
+    <h3>Inventario</h3>
+    <table id="articulos-tabla">
+
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+      </tbody>
+
+    </table>
+  </div>
+  <script src="JS/script.js"></script>
+</body>
+
+</html>

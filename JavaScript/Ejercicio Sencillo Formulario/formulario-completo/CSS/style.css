@@ -1,0 +1,95 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(196, 240, 241);
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body h1 {
+  color: blue;
+}
+
+body .container {
+  background-color: rgb(255, 255, 255);
+  max-width: 80vw;
+  display: flex;
+  border-radius: 10px;
+  padding: 30px;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.523);
+  align-items: center;
+  justify-content: center;
+}
+
+body #articuloForm .form-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 5px auto;
+  box-sizing: border-box;
+}
+
+body #articuloForm .form-group label {
+  display: block;
+  color: blue;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#articuloForm button {
+  margin: 20px auto;
+  display: flex;
+  background-color: blue;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.1s ease-in-out;
+  box-shadow: 2px 2px 5px blue;
+}
+
+#articuloForm button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#articuloForm button:active {
+  transform: scale(0.9);
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.523);
+}
+
+body #articuloForm .form-group-1 {
+  flex: 0 0 auto;
+}
+
+body #articuloForm .form-group-2 {
+  flex: 1;
+  resize: vertical;
+  text-align: end;
+  background-color: aliceblue;
+}
+
+h3 {
+  padding-top: 50px;
+  display: none;
+}
+#articulos-tabla {
+  padding-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: end;
+  gap: 5px;
+}
+
+#articulos-tabla thead {
+  background-color: lightblue;
+}
+
+#articulos-tabla tr, td {
+  border-bottom: 1px solid black;
+}
